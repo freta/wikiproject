@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="vendors/css/normalize.css" />
+
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="contactform container">
+      <form method="post" action="#" id="contact-form">
+        <fieldset class="contact-form">
+          <p>
+            <label id="name" for="nameInput" class="textlabel" required
+              >Name</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="nameInput"
+              class="inputClass"
+              placeholder="Your First Name"
+              maxlength="15"
+              autofocus
+            />
+          </p>
+          <p>
+            <label id="emailc" for="emailInput" class="textlabel" required
+              >Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="emailInput"
+              class="inputClass"
+              placeholder="Your Email"
+              autofocus
+            />
+          </p>
+          <p>
+            <label id="uploadfile" class="textlabel">Upload File</label><br />
+            <input type="file" name="file" id="file" class="inputClass" />
+          </p>
+          <p>
+            <input
+              name="songlist"
+              id="categoryList"
+              list="categoryMessage"
+              placeholder="Type of message"
+            />
+
+            <datalist id="categoryMessage">
+              <option value="Question">Question</option>
+              <option value="Feedback">Feedback</option>
+              <option value="News">News</option>
+              <option value="Advertisment">Advertisment</option>
+            </datalist>
+          </p>
+          <p>
+            <label id="message" class="textlabel" for="messageInput"
+              >Message</label
+            >
+            <textarea
+              id="messageInput"
+              name="message"
+              placeholder="Your Message"
+              maxlength="300"
+              class="inputClass"
+            ></textarea>
+          </p>
+          <p>
+            <label>&nbsp;</label>
+            <input type="submit" value="Send it!!" />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

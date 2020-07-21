@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: 'open sans', sans-serif;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+/*** mainnav-----*/
+.mr-auto {
+  float: left;
+}
+/**---- menunav--*/
+.mainnav {
+  padding-top: 20px;
+}
+.side {
+  background-color: #343a40;
+}
+.side ul li a {
+  color: #fff;
+}
+/**--- Nav ***/
+.cbp-af-header-shrink {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  opacity: 0.9;
+}
+/**---reusable--*/
+ul li {
+  list-style: none;
+}
+/*** blog--*/
+.scontainer {
+  padding: 10px 10px;
+}
+/*------album section-----*/
+#myIframe {
+  padding: 10px 10px;
+}
+.row div li {
+  list-style: none;
+  margin: 4px 2px;
+}
+.albumShowcase div li {
+  padding-left: 0px;
+}
+
+.ablumPhoto {
+  margin: 0;
+  width: 50%;
+  overflow: hidden;
+  background-color: #000;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+.ablumPhoto img {
+  width: 25%;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.7;
+}
+.ablumPhoto img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+/*---- Features----*/
+.updates h3 {
+  word-spacing: 2px;
+  width: 120px;
+  height: 70px;
+  border: 1px solid rgb(167, 134, 134);
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgb(219, 201, 219);
+  display: inline-block;
+}
+/*------FOOTER-----*/
+.fcontainer {
+  background-color: #343a40;
+  color: #fff;
+}
+.socialLinks .media {
+  float: right;
+}
+.socialLinks .media li {
+  padding: 0 20px;
+}
+/* Inline style div.col-sm-9 */
+div.col-sm-9 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/*--------contact form----------*/
+.contactform {
+  width: 80%;
+  margin: 8px 8px;
+}
+.contact-form {
+  width: 97%;
+  padding: 20px 10px;
+}
+input[type='text'],
+#emailInput,
+#categoryList,
+select,
+textarea {
+  width: 97%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+*:focus {
+  outline: none;
+}
+input[type='submit'] {
+  width: 25%;
+  height: 30px;
+  border-radius: 10%;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgb(106, 106, 139);
+  color: white;
+}
+input:required {
+  content: '*';
+  color: red;
+}
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+  color: #c33;
+  border-color: #c33;
+}
+.textlabel {
+  margin: 4px 0;
+  padding-bottom: 4px;
+}
+
+datalist {
+  display: none;
+  content: 'V';
+  color: #343a40;
+}
+/*--Volunteer-page----*/
+.volunteerForm {
+  padding: 0 10px;
+}
+h2,
+P {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.volunteer {
+  width: 75%;
+  margin: 0 3px;
+}
+.volunteerForm P {
+  margin: 7px 5px;
+  padding: 3px 0;
+}
+.volunteerForm P .textlabel {
+  margin-bottom: 7px;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-left: 40px;
+}
+.address {
+  color: grey;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#city,
+#state,
+#post,
+#country {
+  margin: 2px 150px;
+  width: 50%;
+  float: right;
+  padding: 3px 10px;
+}
+/***---signin ----*/
+.formSignin {
+  width: 500px;
+  box-sizing: border-box;
+}
+.signinForm {
+  box-sizing: border-box;
+  border: 1px solid #343a40;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  height: 400px;
+}
+input[type='password'],
+#inputEmail {
+  box-sizing: border-box;
+  padding: 12px 1px;
+  width: 100%;
+}
+label {
+  padding-left: 4px;
+}
+.btnClass,
+#signUp {
+  width: 50%;
+  margin-left: 70px;
+  margin-bottom: 85px;
+  font-size: 20px;
+  background-color: rgb(106, 106, 139);
+  color: white;
+}
+h6 {
+  margin-left: 69px;
+  margin-top: 85px;
+  margin-bottom: 0px;
+}
+/*-----signup------*/
+
+.signupForm {
+  width: 500px;
+}
+.signupform {
+  border: 1px solid #343a40;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  height: 400px;
+}
+#userName,
+input[type='password'] {
+  padding: 12px 9px;
+}
+.createbtn {
+  width: 50%;
+  margin: 12px 85px;
+  display: inline-block;
+  font-size: 20px;
+  background-color: rgb(106, 106, 139);
+  color: white;
+}
