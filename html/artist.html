@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add artist</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="artist-form">
+      <form method="post" action="#" id="artist-form">
+        <fieldset class="artist">
+          <legend>Artist</legend>
+          <p>
+            <label id="artist" class="labelClass" for="artisttxt">Artist</label>
+            <input type="text" id="artisttxt" class="textClass" autofocus />
+          </p>
+          <p>
+            <label id="nickname" class="labelClass" for="nickname"
+              >Nickname</label
+            >
+            <input type="text" id="nickname" class="textClass" autofocus />
+          </p>
+        </fieldset>
+        <p>
+          <label id="freetxt" class="labelClass" for="freeInput"
+            >Free text</label
+          >
+          <textarea id="free" class="textClass"></textarea>
+        </p>
+        <button id="savepage" class="artistbtn">Save page</button>
+        <button id="showpre" class="artistbtn">Show preview</button>
+        <button id="cancel" class="artistbtn">Cancel</button>
+      </form>
+    </div>
+  </body>
+</html>

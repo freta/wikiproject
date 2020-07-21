@@ -9,7 +9,6 @@
   <body>
     <article>
       <div class="volunteer container">
-       
         <p>To volunteer, please fill the form below.</p>
         <form id="volunteerForm">
           <fieldset class="volunteerForm">
@@ -18,8 +17,7 @@
                 id="fullName"
                 class="textLabel"
                 for="fullName"
-                required
-                autofocus
+                
                 >Full Name</label
               >
               <input
@@ -28,33 +26,38 @@
                 class="textClass"
                 maxlength="50"
                 placeholder="Your Full Name"
+                autofocus
+                required
               />
             </p>
             <p>
-              <label id="email" class="textLabel" for="email" required autofocus
+              <label id="email" class="textLabel" for="email" 
                 >Email</label
               >
-              <input type="email" id="email" class="textClass" placeholder="Email" />
+              <input type="email" id="email" class="textClass" placeholder="Email" autofocus
+              required/>
             </p>
-            <p>
-                <fieldset class="address">
-                <legend>Address</legend>
+            
+              <fieldset class="address">
+              <legend>Address</legend>
+              <p>
               <input type="text" id="city" class="textClass" />
-              
               <label id="city1" class="textLabel" for="city" 
                 >City</label
               >
+            </p>
               <input type="text" id="state" class="textClass" />
-              <p>
               <label id="state1" class="textLabel" for="state"
                 >State / Province</label
-              ></p>
+              >
+            </p>
+            <p>
               <input type="number" id="post" class="textClass" />
-              <p>
               <label id="post1" class="textLabel" for="post"
                 >Postal / Zip Code</label
-              ></p>
-                     
+              >
+            </p>
+            <p>         
               <select id="country" class="textClass" name="country">
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -325,12 +328,12 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
               </select>
-              <p>
-                <label id="country1" class="textLabel" for="country"
+              <label id="country1" class="textLabel" for="country"
                   >Country</label
-                ></p>
-            </fieldset>
+             >
             </p>
+            </fieldset>
+            
             <p>
               <label id="help" class="textLabel"
                 >How would you like to help</label

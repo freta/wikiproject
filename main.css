@@ -9,7 +9,7 @@ body {
 }
 /*** mainnav-----*/
 .mr-auto {
-  float: left;
+  margin-left: 500px;
 }
 /**---- menunav--*/
 .mainnav {
@@ -112,10 +112,14 @@ div.col-sm-9 {
 .contactform {
   width: 80%;
   margin: 8px 8px;
+  background-color: #f2f2f2;
 }
 .contact-form {
   width: 97%;
   padding: 20px 10px;
+}
+input[type='file'] {
+  border: 1px solid #ccc;
 }
 input[type='text'],
 #emailInput,
@@ -127,18 +131,23 @@ textarea {
   border-radius: 3px;
   border: 1px solid #ccc;
 }
+textarea {
+  height: 150px;
+}
 
 *:focus {
   outline: none;
 }
 input[type='submit'] {
   width: 25%;
-  height: 30px;
-  border-radius: 10%;
   margin-top: 20px;
   font-size: 20px;
   background-color: rgb(106, 106, 139);
   color: white;
+  border-radius: 3px;
+  padding: 16px 32px;
+  cursor: pointer;
+  border: none;
 }
 input:required {
   content: '*';
@@ -163,6 +172,7 @@ datalist {
 /*--Volunteer-page----*/
 .volunteerForm {
   padding: 0 10px;
+  background-color: #f2f2f2;
 }
 h2,
 P {
@@ -186,16 +196,23 @@ P {
   margin-left: 40px;
 }
 .address {
-  color: grey;
   padding: 0 10px;
-  box-sizing: border-box;
+  border-radius: 3px;
 }
 
+input[type='text'],
+input[type='email'],
+input[type='number'] {
+  width: 97%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
 #city,
 #state,
 #post,
 #country {
-  margin: 2px 150px;
+  margin: 2px 140px;
   width: 50%;
   float: right;
   padding: 3px 10px;
@@ -203,20 +220,21 @@ P {
 /***---signin ----*/
 .formSignin {
   width: 500px;
+  background-color: #f2f2f2;
   box-sizing: border-box;
 }
 .signinForm {
   box-sizing: border-box;
   border: 1px solid #343a40;
-  padding: 5px 5px;
+  padding: 9px 9px;
   margin: 5px 5px;
   height: 400px;
 }
-input[type='password'],
+#inputPassword,
 #inputEmail {
-  box-sizing: border-box;
   padding: 12px 1px;
   width: 100%;
+  border: 1px solid #ccc;
 }
 label {
   padding-left: 4px;
@@ -224,13 +242,16 @@ label {
 .btnClass,
 #signUp {
   width: 50%;
-  margin-left: 70px;
-  margin-bottom: 85px;
+  margin-left: 65px;
+  margin-bottom: 35px;
   font-size: 20px;
   background-color: rgb(106, 106, 139);
   color: white;
+  padding: 16px 32px;
+  cursor: pointer;
+  border: none;
 }
-h6 {
+h4 {
   margin-left: 69px;
   margin-top: 85px;
   margin-bottom: 0px;
@@ -239,6 +260,8 @@ h6 {
 
 .signupForm {
   width: 500px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 .signupform {
   border: 1px solid #343a40;
@@ -247,14 +270,54 @@ h6 {
   height: 400px;
 }
 #userName,
-input[type='password'] {
+#password,
+#confirm {
   padding: 12px 9px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .createbtn {
-  width: 50%;
-  margin: 12px 85px;
-  display: inline-block;
+  width: 70%;
+  margin: 12px 54px;
   font-size: 20px;
   background-color: rgb(106, 106, 139);
   color: white;
+  padding: 16px 32px;
+  cursor: pointer;
+  border: none;
+}
+/***-----artist------**/
+.artist-form {
+  background-color: #f2f2f2;
+  width: 500px;
+  box-sizing: border-box;
+  border: 1px solid #343a40;
+  margin: 5px 5px;
+  padding: 5px 9px;
+}
+.artist {
+  margin: 5px 5px;
+  padding: 5px 9px;
+}
+#artistxt,
+#nickname {
+  width: 100%;
+  box-sizing: border-box;
+}
+#free {
+  margin: 5px 5px;
+  padding: 5px 9px;
+  box-sizing: border-box;
+}
+.artistbtn {
+  width: 140px;
+  font-size: 16px;
+  background-color: rgb(106, 106, 139);
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+}
+#savepage {
+  margin-left: 5px;
 }
