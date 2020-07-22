@@ -234,7 +234,7 @@ input[type='number'] {
 }
 #inputPassword,
 #inputEmail {
-  padding: 12px 1px;
+  padding: 12px 3px;
   width: 100%;
   border: 1px solid #ccc;
 }
@@ -253,13 +253,12 @@ label {
   cursor: pointer;
   border: none;
 }
-h4 {
+#signin > h4 {
   margin-left: 69px;
   margin-top: 85px;
   margin-bottom: 0px;
 }
 /*-----signup------*/
-
 .signupForm {
   width: 500px;
   background-color: #f2f2f2;
@@ -322,4 +321,24 @@ h4 {
 }
 #savepage {
   margin-left: 5px;
+}
+/*----lyrics-submition----*/
+.lyrics {
+  margin: 0 4px;
+  width: 60%;
+  box-sizing: border-box;
+}
+.submitionForm {
+  background-color: #f2f2f2;
+  margin: 8px 8px;
+  padding: 8px 8px;
+}
+div > h4,
+h6 {
+  margin: 3px 7px;
+}
+/**----Classics---*/
+.breadcrumb {
+  list-style: none;
+  display: block;
 }

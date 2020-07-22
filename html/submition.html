@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submition audio/lyric</title>
+    <meta lang="en" charset="utf-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <script href="../js/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="lyrics">
+      <h4>To submit song lyrics</h4>
+      <h6>
+        <strong>Note: </strong>We will NOT upload or use Originial music without
+        permision of the artist/distrbutor.
+      </h6>
+
+      <form id="submitionForm">
+        <fieldset class="submitionForm">
+          <p>
+            <select id="type" class="textLabel" name="typesubmition" autofocus
+              ><option value="Lyrics">Lyrics</option>
+              <option value="Audio">Audio</option>
+            </select>
+          </p>
+          <p>
+            <select id="lang" class="textLabel" name="language"
+              ><option value="Tigrinya">Tigrinya</option>
+              <option value="Tigre">Tigre</option>
+              <option value="Kunama">Kunama</option>
+              <option value="Bilen">Bilen</option>
+              <option value="Nara">Nara</option>
+              <option value="Saho">Saho</option>
+              <option value="Afar">Afar</option>
+            </select>
+          </p>
+
+          <p>
+            <label id="email" class="textLabel" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="textClass"
+              placeholder="Enter your email"
+              required
+              autofocus
+            />
+          </p>
+          <p>
+            <label id="uploadfile" class="textlabel">Upload lyrics/audio </label
+            ><br />
+            <input type="file" name="file" id="file" class="inputClass" />
+          </p>
+          <p>
+            <label id="songName" class="textLabel" for="songName"
+              >Singer's or choir name</label
+            >
+            <input
+              type="text"
+              id="songName"
+              class="textClass"
+              placeholder="Singer's name or choir name"
+              autofocus
+            />
+          </p>
+          <p>
+            <label id="song" class="textLabel" for="songTitle"
+              >Song title</label
+            >
+            <input
+              type="text"
+              id="songTitle"
+              class="textClass"
+              placeholder="Song title"
+              autofocus
+            />
+          </p>
+          <p>
+            <label id="album" class="textLabel" for="album">Album </label>
+            <input
+              type="number"
+              id="album"
+              class="textClass"
+              placeholder="Album number e.g album #3"
+              min="1"
+              max="12"
+            />
+          </p>
+          <p>
+            <label id="albumtitle" class="textLabel" for="albumTitle"
+              >Album title</label
+            >
+            <input
+              type="text"
+              id="albumTitle"
+              class="textClass"
+              placeholder="Album title"
+              autofocus
+            />
+          </p>
+          <p>
+            <label id="datepicker" class="textLabel" for="datepicker"
+              >Year
+            </label>
+            <input
+              type="text"
+              id="datepicker"
+              class="textClass datepicker"
+              placeholder="2000"
+              autofocus
+            />
+          </p>
+          <p>
+            <label
+              id="audioLength"
+              class="textLabel"
+              for="audioLength"
+              autofocus
+              >Audio length
+            </label>
+            <input
+              type="text"
+              id="audioLength"
+              class="textClass"
+              placeholder="Audio length"
+              autofocus
+            />
+          </p>
+          <p>
+            <label id="lyrics" class="textLabel" for="lyrics">Lyrics</label>
+            <textarea
+              id="lyrics"
+              class="textClass"
+              placeholder="Write the lyrics or use the upload button to upload..."
+            ></textarea>
+          </p>
+          <p>
+            <label id="review" class="textLabel" for="review"
+              >Review Needed?</label
+            >
+            <select id="review" class="textClass" name="reviewconfirm"
+              ><option value="Yes" selected>Yes</option>
+              <option value="No">No</option>
+            </select>
+          </p>
+          <p>
+            <label>&nbsp;</label>
+            <input type="submit" value="Submit" />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+  <script src="../js/jquery-3.5.1.js"></script>
+  <script>
+    $(function () {
+      $('.datepicker').datepicker({
+        dateFormat: 'yy',
+        changeYear: true,
+        changeMonth: false,
+      });
+    });
+  </script>
+</html>
