@@ -338,7 +338,42 @@ h6 {
   margin: 3px 7px;
 }
 /**----Classics---*/
-.breadcrumb {
-  list-style: none;
-  display: block;
+
+table {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 0 2px;
+  border-spacing: 5px;
+}
+tbody {
+}
+tr {
+  vertical-align: inherit;
+  box-sizing: inherit;
+  padding: 0 2px;
+}
+.td {
+  padding: 0 auto;
+  font-size: 115%;
+  display: table-cell;
+}
+.dataalbum {
+  padding: 4px 10px;
+
+  margin: 0;
+}
+ol {
+  box-sizing: content-box;
+  margin-left: 16px;
+}
+ol li {
+}
+/*----album-setting----*/
+.albumSection {
+  margin: 0 4px;
+  padding: 2px 4px;
+  box-sizing: border-box;
+}
+.ablumimg {
+  padding: 34px 0;
 }
