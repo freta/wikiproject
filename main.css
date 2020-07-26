@@ -368,6 +368,10 @@ ol {
 }
 ol li {
 }
+.addArtist {
+  float: right;
+  margin-right: 90px;
+}
 /*----album-setting----*/
 .albumSection {
   margin: 0 4px;
