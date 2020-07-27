@@ -1,0 +1,29 @@
+{
+  "name": "wikiresponsive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freta/wikiproject.git"
+  },
+  "keywords": [
+    "mezmur",
+    "lyrics",
+    "tigrinya"
+  ],
+  "author": "Freweini Beyene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freta/wikiproject/issues"
+  },
+  "homepage": "https://github.com/freta/wikiproject#readme"
+}
