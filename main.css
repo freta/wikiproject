@@ -337,7 +337,7 @@ label {
   box-sizing: border-box;
 }
 .submitionForm {
-  background-color: 4f5f6e;
+  background-color: #4f5f6e;
   margin: 8px 8px;
   padding: 8px 8px;
 }
@@ -353,8 +353,7 @@ table {
   margin: 0 2px;
   border-spacing: 5px;
 }
-tbody {
-}
+
 tr {
   vertical-align: inherit;
   box-sizing: inherit;
@@ -374,8 +373,7 @@ ol {
   box-sizing: content-box;
   margin-left: 16px;
 }
-ol li {
-}
+
 .addArtist {
   float: right;
   margin-right: 90px;
@@ -389,6 +387,25 @@ ol li {
 .ablumimg {
   padding: 34px 0;
 }
+/*-----lyrics display -----*/
+.lyricCont {
+  box-sizing: border-box;
+  margin: 2px 2px;
+  padding-left: 15px;
+}
+
+.breadcrumb {
+  background-color: #fff;
+}
+.poemRepeat {
+  display: inline-block;
+  margin-left: 1em;
+}
+.poemcontinue {
+  display: inline-block;
+  margin-left: 3em;
+}
+/***Media **/
 @media (min-width: 375-480px) {
   .contframe {
     margin-top: 30px;

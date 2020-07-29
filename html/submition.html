@@ -64,6 +64,17 @@
             />
           </p>
           <p>
+            <label id="category" class="textLabel" for="songCategory"
+              >Song category</label
+            >
+            <select id="category" class="textClass" name="category"
+              ><option value="Worship" selected>Worship</option>
+              <option value="Praise">Praise</option>
+              <option value="classic">classic</option>
+              <option value="Children">Children</option>
+            </select>
+          </p>
+          <p>
             <label id="song" class="textLabel" for="songTitle"
               >Song title</label
             >
@@ -75,17 +86,7 @@
               autofocus
             />
           </p>
-          <p>
-            <label id="category" class="textLabel" for="songCategory"
-              >Song category</label
-            >
-            <select id="category" class="textClass" name="category"
-              ><option value="Worship" selected>Worship</option>
-              <option value="Praise">Praise</option>
-              <option value="classic">classic</option>
-              <option value="Children">Children</option>
-            </select>
-          </p>
+
           <p>
             <label id="album" class="textLabel" for="album">Album </label>
             <input
@@ -163,13 +164,10 @@
     </div>
   </body>
   <script src="../js/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
     $(function () {
-      $('.datepicker').datepicker({
-        dateFormat: 'yy',
-        changeYear: true,
-        changeMonth: false,
-      });
+      $('.datepicker').datepicker({});
     });
   </script>
 </html>
