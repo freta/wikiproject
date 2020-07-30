@@ -397,13 +397,42 @@ ol {
 .breadcrumb {
   background-color: #fff;
 }
-.poemRepeat {
-  display: inline-block;
+#songName {
+  font-size: 32px;
+  line-height: 1.2;
+
+  margin-bottom: 10px;
+}
+#singerName {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+#singerName:before {
+  content: '-';
+}
+
+.poemRepeat::before {
+  content: 'ዝድገም :-';
   margin-left: 1em;
 }
 .poemcontinue {
-  display: inline-block;
   margin-left: 3em;
+}
+#one::before {
+  content: '፩) ';
+}
+#two::before {
+  content: '፪) ';
+}
+#three::before {
+  content: '፫) ';
+}
+#four::before {
+  content: '፬) ';
+}
+#five::before {
+  content: '፭) ';
 }
 /***Media **/
 @media (min-width: 375-480px) {
