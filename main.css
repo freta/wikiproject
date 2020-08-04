@@ -4,7 +4,7 @@
 }
 body {
   font-family: 'open sans', sans-serif;
-  padding-top: 80px;
+  padding-top: 56px;
   box-sizing: border-box;
 }
 /*** mainnav-----*/
@@ -120,13 +120,14 @@ div.col-sm-9 {
 /*--------contact form----------*/
 
 .contactform {
-  width: 80%;
   margin: 8px 8px;
-  background-color: #4f5f6e;
+  width: 80%;
+  box-sizing: border-box;
 }
 .contact-form {
-  width: 97%;
+  width: 50%;
   padding: 20px 10px;
+  background-color: #4f5f6e;
 }
 input[type='file'] {
   border: 1px solid #ccc;
@@ -140,6 +141,7 @@ textarea {
   padding: 7px;
   border-radius: 3px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 textarea {
   height: 150px;
@@ -149,6 +151,7 @@ textarea {
   outline: none;
 }
 input[type='submit'] {
+  box-sizing: content-box;
   width: 25%;
   margin-top: 20px;
   font-size: 20px;
@@ -352,17 +355,19 @@ table {
   padding: 4px 4px;
   margin: 0 2px;
   border-spacing: 5px;
+  box-sizing: border-box;
 }
 
 tr {
   vertical-align: inherit;
-  box-sizing: inherit;
+  box-sizing: border-box;
   padding: 0 2px;
 }
 .td {
   padding: 0 auto;
   font-size: 115%;
   display: table-cell;
+  box-sizing: content-box;
 }
 .dataalbum {
   padding: 4px 10px;
@@ -376,11 +381,11 @@ ol {
 
 .addArtist {
   float: right;
-  margin-right: 90px;
+  /*margin-right: 90px;*/
 }
 /*----album-setting----*/
 .albumSection {
-  margin: 0 4px;
+  margin: 0;
   padding: 2px 4px;
   box-sizing: border-box;
 }
@@ -434,7 +439,24 @@ ol {
 #five::before {
   content: '፭) ';
 }
+#six::before {
+  content: '፮) ';
+}
+#seven::before {
+  content: '፯) ';
+}
+#eight::before {
+  content: '፰) ';
+}
+#nine::before {
+  content: '፱) ';
+}
 /***Media **/
+@media (max-width: 320-41px) {
+  .contactform {
+    margin: 0;
+  }
+}
 @media (min-width: 375-480px) {
   .contframe {
     margin-top: 30px;
@@ -446,7 +468,7 @@ ol {
   }
 }
 @media (max-width: 1024px) {
-  .mr-auto {
+  /* .mr-auto {
     margin-left: 440px;
-  }
+  }*/
 }
